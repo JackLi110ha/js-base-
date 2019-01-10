@@ -44,4 +44,13 @@ base.prototype.isMobilePhone = function (phone) {
     } else {
         return 0;
     }
+};
+base.prototype.getSum=function(arr){
+    var max=-Infinity;
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    return max;
 }
